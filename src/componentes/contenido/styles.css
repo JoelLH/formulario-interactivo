@@ -1,0 +1,118 @@
+
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1D2D44;
+}
+.form-content{
+    width: 60%;
+    min-height: 80%;
+    background-color: white;
+    border: 2px solid grey;
+    padding: 10px;
+    margin-top: 30px;
+}
+fieldset{
+    width: 100%;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    place-items: center;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    position: relative;
+}
+fieldset:hover{
+    border: 1px solid rgb(74, 159, 255);
+    border-radius: 5px;
+}
+fieldset:hover > .delete-btn{
+    display: block;
+}
+fieldset label{
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #3E5C76;
+}
+fieldset input{
+    padding-left: 10px;
+    display: block;
+    margin-top: 10px;
+    height: 45px;
+    border: 1px solid #8b9cb1;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 1.1rem;
+}
+fieldset.field-sm{
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+}
+.radios input[type="radio"]{
+    display: none;
+}
+.radios i {
+    pointer-events: none;
+}
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #3E5C76;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.container-flex-around{
+    display: flex;
+    padding-left: 10px;
+    /* grid-template-columns: repeat(5,minmax(0,auto)); */
+
+}
+.container-flex-around label{
+    max-width: 50px;
+    
+}
+.coment {
+    display: block;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.delete-btn{
+    color: red;
+    font-size: 1.1rem;
+    background-color: white;
+    border-top: transparent;
+    border-left:1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 5px;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    padding: 5px 10px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    bottom: -33px;
+    right: 10px;
+}
+.delete-btn > *{
+    pointer-events: none;
+}
+.delete-btn:hover{
+    filter: brightness(90%);
+}
+.delete-btn:active > i{
+    transform: scale(.9);
+}

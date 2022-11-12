@@ -1,0 +1,42 @@
+
+
+.compo-section{
+    border-right: 2px solid var(--light-grey);
+    min-height: 100%;
+    padding: 18px;
+
+}
+.compo-header{
+    margin-bottom: 15px;
+
+}
+.barra-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.componentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    gap: 10px;
+}
+.comp-btn{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    background-color: white;
+    border: 1px solid grey;
+    color: #172A3A;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comp-btn:hover{
+    border: 1px solid #08A4BD;
+}
+.comp-btn > *{
+    pointer-events: none;
+}
